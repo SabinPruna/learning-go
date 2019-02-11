@@ -16,3 +16,5 @@ func conversionOfMyType() {
 	fmt.Println(y)
 	fmt.Printf("%T\n", yConv)
 }
+
+
