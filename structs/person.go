@@ -9,6 +9,12 @@ type Person struct {
 	First   string
 	Last    string
 	Flavors []string
+	Age     int
+}
+
+//Speak makes the person speak
+func (person Person) Speak() {
+	fmt.Printf("I am %v and i am %v years old", person.First, person.Age)
 }
 
 //MakePrintPerson does what it says
@@ -62,4 +68,11 @@ func IteratePersonMap(persons map[string]Person) {
 		fmt.Println(persons[key])
 		fmt.Println(value)
 	}
+}
+
+func changeMe(person *Person) {
+	*person = Person{
+		Age:     1,
+		First:   "changed",
+		Flavors: []string{"changedFlavour"}}
 }
