@@ -72,4 +72,5 @@ func AnonymousStructExample() {
 	for i, val := range s.favDrinks {
 		fmt.Println(i, val)
 	}
+
 }
